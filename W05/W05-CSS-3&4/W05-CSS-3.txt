@@ -1,0 +1,12 @@
+//Answer for Question 3 
+ 
+//1. RGB Code of Heximal code #9003fc: rgba(144, 3, 252)
+
+//2. Hex code of rgba(3, 252, 119): #fc7703
+
+//3. color name of heximal #d2691e: Chocolate color
+
+//4. name, hex, rgba code of 2025 color of the year:
+//name: future dusk
+//rgba: rgba(79, 82, 116)
+//hex: #4f5274

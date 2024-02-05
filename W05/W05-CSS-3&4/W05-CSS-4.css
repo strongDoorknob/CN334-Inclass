@@ -1,0 +1,15 @@
+h1 {
+    transform: rotateZ(180deg);
+    animation: rotate_cn334 3s infinite;
+  }
+    
+  .student-info {
+    font-size: calc(10px * sqrt(25));
+    color: rgba(255, 50, 50, 1);
+  }
+  
+  @keyframes rotate_cn334 {
+    0% {transform: rotateZ(0deg)}
+    50% {transform: rotateZ(180deg)}
+    100% {transform: rotateZ(360deg)}
+  }

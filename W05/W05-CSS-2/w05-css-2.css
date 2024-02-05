@@ -1,0 +1,18 @@
+h1 {
+    color: purple;
+    margin: .5em;
+    background: #aaa;
+    text-align: end;
+  }
+  
+  .student-info {
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    color: #abe;
+  }
+  
+  #hello-button {
+    background-color: #99a;
+    color: #fff;
+    border-radius: 0.5em;
+  }

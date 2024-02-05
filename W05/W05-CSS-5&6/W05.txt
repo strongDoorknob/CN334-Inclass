@@ -1,0 +1,12 @@
+/*
+1. margin: for creating space "around elements", located 
+outside of any of the mentioned defined borders.
+
+2. padding: for creating space "around elements", located 
+inside of any defined borders.
+
+3. the difference is quite simple; margin create space around elements outside the border. on the other hand, padding do the different role, creating space from the inside.
+
+*/
+
+//For Inclass-5 Questions

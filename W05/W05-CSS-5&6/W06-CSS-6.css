@@ -1,0 +1,38 @@
+.header {
+    grid-area: header;
+  }
+  
+  .topic {
+    grid-area: topic;
+  }
+  
+  .student-id {
+    grid-area: studentId;
+  }
+  
+  .student-name {
+    grid-area: studentName;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'topic topic studentId studentId studentId'
+    'topic topic studentName studentName studentName'
+    'footer footer footer footer footer';
+    gap: 10px;
+    background-color: #fe5555;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
