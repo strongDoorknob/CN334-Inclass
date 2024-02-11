@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclass 5</title>
+    <style>
+        h1 {
+            font-family: 'Niramit';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CN334 W06 JS</h1>
+
+    Friend name: <input onkeyup="search_name()" type="text" id="name">
+    <p id="result"></p>
+    <p id="list"></p>
+
+    <script>
+        var my_friends = [{
+            "id": "0",
+            "name": "Ajarn_ART_soodloh"
+        },
+        {
+            "id": "12345",
+            "name": "TA"
+        },
+        {
+            "id": "2",
+            "name": ":D"
+        }
+        ]
+
+        my_friends.forEach((value, index) => {
+            document.getElementById("list").innerHTML += index + 1 + " = " + value.id + " " + value.name + "<br>"
+        })
+
+        function search_name() {
+            let name_input = document.getElementById("name").value;
+            let result = my_friends.findIndex((value) => value.name == name_input.toString());
+            console.log(result)
+            if (result > -1) {
+                document.getElementById("result").innerHTML = "Found your friends at " + (result+1);
+            } else {
+                document.getElementById("result").innerHTML = "404 Friends not found :P";
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclass 6</title>
+</head>
+<body>
+    <h1>CN334 W6 JS</h1>
+
+    <h3>
+        Car models from OpenDataSoft API
+    </h3>
+    <p id="list">Loading... </p>
+
+    <script>
+        const apiUrl = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/all-vehicles-model/records?limit=5";
+
+        fetch(apiUrl) 
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById("list").innerHTML = "";
+                if (data) {
+                    data.results.forEach((car) => {
+                        document.getElementById("list").innerHTML += car.model + "<br>";
+                    });
+                }
+            })
+            .catch(error => {
+                document.getElementById("list").innerHTML = error.toString();
+            })
+        
+    </script>
+</body>
+</html>
